@@ -98,11 +98,15 @@ select {
     width: 180px; /* Adjust width as needed */
 }
 
+select:hover {
+    color: #e0e0e0;
+    transition: color 0.5s ease-in;
+    animation: linearGradient 0.5s forwards linear;
+}
+
 select option {
     background-color: #fff;
-    color: #333;
-    padding: 8px;
-    font-size: 16px;
+    color: #505153;
 }
 
 

@@ -44,10 +44,65 @@ button {
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #2d9cf7, #7dbdf1 );
 }
+button:hover {
+    color: #e0e0e0;
+    transition: color 0.5s ease-in;
+    animation: linearGradient 0.5s forwards linear;
+}
+@keyframes linearGradient {
+    0% {
+        background: linear-gradient(45deg, #2d9cf7, #7dbdf1);
+    }
+    10% {
+        background: linear-gradient(45deg, #2d9cf7, #7dbdf1, #7dbdf1);
+    }
+    25% {
+        background: linear-gradient(45deg, #2d9cf7, #7dbdf1, #7dbdf1, #7dbdf1);
+    }
+    40% {
+        background: linear-gradient(45deg, #7dbdf1, #7dbdf1, #2d9cf7);
+    }
+    55% {
+        background: linear-gradient(45deg, #7dbdf1, #7dbdf1, #2d9cf7, #2d9cf7);
+    }
+    70% {
+        background: linear-gradient(45deg, #7dbdf1, #2d9cf7, #2d9cf7, #2d9cf7);
+    }
+    85% {
+        background: linear-gradient(45deg, #2d9cf7, #2d9cf7);
+    }
+    100% {
+        background: linear-gradient(45deg, #2d9cf7, #2d9cf7);
+    }
+}
+
+
 
 #board[data-size='3'] .cell { width: 100px; height: 100px; }
 #board[data-size='4'] .cell { width: 80px; height: 80px; }
 #board[data-size='5'] .cell { width: 60px; height: 60px; }
 #board[data-size='10'] .cell { width: 40px; height: 40px; }
 #board[data-size='20'] .cell { width: 20px; height: 20px; }
+
+select {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #7dbdf1 , #2d9cf7);
+    width: 180px; /* Adjust width as needed */
+}
+
+select option {
+    background-color: #fff;
+    color: #333;
+    padding: 8px;
+    font-size: 16px;
+}
+
+
